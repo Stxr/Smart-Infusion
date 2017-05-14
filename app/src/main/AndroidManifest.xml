@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stxr.smartinfusion">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--测试界面-->
+        <activity android:name=".TestActivity"/>
+        <!--主界面-->
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--系统设置-->
+        <activity android:name=".ui.SystemActivity"
+            android:screenOrientation="portrait"
+            android:label="系统设置"/>
+        <!--wifi连接-->
+        <activity android:name=".ui.WifiActivity"
+            android:screenOrientation="portrait"
+            android:label="WiFi连接"/>
+        <!--输液设置-->
+        <activity android:name=".ui.ShueyeActivity"
+            android:screenOrientation="portrait"
+            android:label="输液设置"/>
+        <activity android:name=".ui.DisplayActivity"
+            android:screenOrientation="portrait"
+            android:label="输液界面"/>
+    </application>
+
+</manifest>

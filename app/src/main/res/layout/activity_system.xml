@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="系统设置" />-->
+
+    <Button
+        android:id="@+id/btn_wifiConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WIFI连接" />
+
+    <Button
+        android:id="@+id/btn_motorReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电机重置" />
+
+    <Button
+        android:id="@+id/btn_systemUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统升级" />
+
+    <Button
+        android:id="@+id/btn_aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于我们" />
+
+</LinearLayout>
